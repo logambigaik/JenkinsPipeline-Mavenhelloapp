@@ -15,7 +15,7 @@ Pipeline Syntax for script:
 
 Pipeline Code:
 
-pipeline{
+{
     agent any
     stages{
         stage('SCM'){
@@ -32,10 +32,11 @@ pipeline{
         stage('Deploy to Tomcat'){
             steps{
                 dir('target') {
-                       sh 'scp target/Maven-webapp.war root@172.31.30.146:/opt/apache-tomcat-8.5.61/webapps'
+                    sh 'scp *.war root@172.31.30.146:/opt/apache-tomcat-8.5.61/webapps'
+                    }
+                }       
                        
-                }        
-            }
+        
         }
         
     }
@@ -81,7 +82,8 @@ using exit command come out of jenkins user and update visudo (command :sudo vis
 ![Capture](https://user-images.githubusercontent.com/54719289/103574822-a1e51b80-4ef6-11eb-871a-a070804409dd.JPG)
 
 Also enable passwordauthentication as yes in (etc/ssh/sshd_config)
-
+ 
+ssh root@18.224.140.97 -its mandatory
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103577368-aca1af80-4efa-11eb-931b-40b6eeea355c.JPG)
 
