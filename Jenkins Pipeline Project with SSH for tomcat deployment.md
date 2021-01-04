@@ -14,21 +14,20 @@ sudo -i
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103563586-05654e00-4ee3-11eb-8df5-8d0a4d8919e9.JPG)
 
+Next,
 ![Capture](https://user-images.githubusercontent.com/54719289/103564654-ea93d900-4ee4-11eb-8e66-1ef4889b7644.JPG)
 
+Next,
 ![Capture](https://user-images.githubusercontent.com/54719289/103564734-0eefb580-4ee5-11eb-8efe-e53d09e7c7ea.JPG)
-
+Next,
 ![Capture](https://user-images.githubusercontent.com/54719289/103564841-3f375400-4ee5-11eb-9e4d-abf82d242ed6.JPG)
-
-
+Next,
 ![Capture](https://user-images.githubusercontent.com/54719289/103564910-5d9d4f80-4ee5-11eb-9047-830d3c40876d.JPG)
-
-
+Next,
 ![Capture](https://user-images.githubusercontent.com/54719289/103565003-84f41c80-4ee5-11eb-9fea-46b6083762ca.JPG)
-
-
+Next,
 ![Capture](https://user-images.githubusercontent.com/54719289/103565063-a8b76280-4ee5-11eb-9fb2-5f1dee76dcb7.JPG)
-
+Next,
 ![Capture](https://user-images.githubusercontent.com/54719289/103565155-d3092000-4ee5-11eb-9e10-3033f0f6afc1.JPG)
 
 
