@@ -11,4 +11,5 @@ yum install git maven java-1.8* -y
 to change hostname :
 sudo hostnamectl set-hostname jenkin
 sudo -i
-https://user-images.githubusercontent.com/54719289/103563586-05654e00-4ee3-11eb-8df5-8d0a4d8919e9.JPG
+![Capture](https://user-images.githubusercontent.com/54719289/103563586-05654e00-4ee3-11eb-8df5-8d0a4d8919e9.JPG)
+
