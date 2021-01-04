@@ -85,6 +85,10 @@ Also enable passwordauthentication as yes in (etc/ssh/sshd_config)
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103577368-aca1af80-4efa-11eb-931b-40b6eeea355c.JPG)
 
+
+![Capture](https://user-images.githubusercontent.com/54719289/103577604-246fda00-4efb-11eb-881a-369e9d24f9e4.JPG)
+
+
  
 
 
