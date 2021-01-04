@@ -108,7 +108,7 @@ Now login to tomcat from jenkins,
 
 Logout from tomcat server and copy the location of war file:
 
-in Tomcat Server:
+in Jenkins Server:
 ===============
 
 use scp command to copy the jenkin's war file
@@ -146,8 +146,6 @@ Tomcat UI:
 ![Capture](https://user-images.githubusercontent.com/54719289/103570745-abb75080-4eef-11eb-88a9-dfc2f031fe46.JPG)
 
   
-
-
 
 
 
