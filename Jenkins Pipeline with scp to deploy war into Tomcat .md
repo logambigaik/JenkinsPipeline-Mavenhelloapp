@@ -31,8 +31,8 @@ pipeline{
         
         stage('Deploy to Tomcat'){
             steps{
-                dir('Maven-webapp/target') {
-                       sh 'scp Maven-webapp.war root@172.31.30.146:/opt/apache-tomcat-8.5.61/webapps'
+                dir('target') {
+                       sh 'scp target/Maven-webapp.war root@172.31.30.146:/opt/apache-tomcat-8.5.61/webapps'
                        
                 }        
             }
@@ -83,6 +83,7 @@ using exit command come out of jenkins user and update visudo (command :sudo vis
 Also enable passwordauthentication as yes in (etc/ssh/sshd_config)
 
 
+![Capture](https://user-images.githubusercontent.com/54719289/103577368-aca1af80-4efa-11eb-931b-40b6eeea355c.JPG)
 
  
 
