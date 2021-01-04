@@ -47,8 +47,6 @@ git clone https://github.com/logambigaik/Maven-webapp.git
 ![Capture](https://user-images.githubusercontent.com/54719289/103566407-fb921980-4ee7-11eb-8654-f963d0de46b5.JPG)
 
 
-
-
 Tomcat install:
 =============
 yum install git maven java-1.8* -y  
@@ -143,7 +141,9 @@ Tomcat server:
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103569778-f0da8300-4eed-11eb-87a2-e22237915331.JPG)
 
+Tomcat UI:
 
+![Capture](https://user-images.githubusercontent.com/54719289/103569778-f0da8300-4eed-11eb-87a2-e22237915331.JPG)
   
 
 
