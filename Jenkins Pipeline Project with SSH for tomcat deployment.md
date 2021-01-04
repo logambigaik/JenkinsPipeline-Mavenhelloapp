@@ -84,3 +84,69 @@ id_rsa.pub -public key
 Copy the public key from jenkins and place it in tomcat -authorized_keys.
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103567191-58da9a80-4ee9-11eb-8ad0-d70ae289c6c0.JPG)
+
+
+in Tomcat Server:
+================
+
+ssh-keygen,
+
+![Capture](https://user-images.githubusercontent.com/54719289/103567689-44e36880-4eea-11eb-9eb2-b7ccdc3fa2b3.JPG)
+
+
+After pasting the jenkins id_rsa.pub in authorized_keys (tomcat),
+
+![Capture](https://user-images.githubusercontent.com/54719289/103567908-9f7cc480-4eea-11eb-9733-d4b8c6a0c3ff.JPG)
+
+
+in Jenkins:
+==========
+
+ssh root@172.31.30.146
+
+![Capture](https://user-images.githubusercontent.com/54719289/103568201-2c278280-4eeb-11eb-86a1-096ee78fcf64.JPG)
+
+Now login to tomcat from jenkins,
+
+Logout from tomcat server and copy the location of war file:
+
+in Tomcat Server:
+===============
+
+use scp command to copy the jenkin's war file
+
+scp <source-path> user@ipaddr:<destinationpath>
+scp /root/Maven-webapp/target/Maven-webapp.war root@172.31.30.146:/opt/apache-tomcat-8.5.61/webapps
+  
+![Capture](https://user-images.githubusercontent.com/54719289/103568829-44e46800-4eec-11eb-9571-2676345949f4.JPG)
+
+in Jenkins server:
+================
+
+For permission denied issue, change the PasswordAuthentication no to yes(/etc/ssh/sshd_config in jenkins)
+
+Before update,
+
+![Capture](https://user-images.githubusercontent.com/54719289/103569043-9ee52d80-4eec-11eb-9af2-fbb4346e3d30.JPG)
+
+After update,
+
+![Capture](https://user-images.githubusercontent.com/54719289/103569143-ccca7200-4eec-11eb-8dbb-8cda285e6641.JPG)
+
+After issuing SCP command in Jenkins:
+====================================
+
+![Capture](https://user-images.githubusercontent.com/54719289/103569675-bbce3080-4eed-11eb-86f0-38870a3bc198.JPG)
+
+Tomcat server:
+=============
+
+![Capture](https://user-images.githubusercontent.com/54719289/103569778-f0da8300-4eed-11eb-87a2-e22237915331.JPG)
+
+
+  
+
+
+
+
+
