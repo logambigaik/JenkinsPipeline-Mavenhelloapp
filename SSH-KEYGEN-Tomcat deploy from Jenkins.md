@@ -7,9 +7,10 @@ sudo rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
 yum install jenkins -y
 
+yum install git maven java-1.8* -y
+
 sudo service jenkins start
 
-yum install git maven java-1.8* -y
 
 To change hostname :
 ==================
