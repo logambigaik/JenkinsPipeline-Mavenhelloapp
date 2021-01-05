@@ -2,14 +2,19 @@ Jenkins install  :
 ===============
 
 wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+
 sudo rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
 yum install jenkins -y
+
 sudo service jenkins start
 
 yum install git maven java-1.8* -y
 
-to change hostname :
+To change hostname :
+==================
 sudo hostnamectl set-hostname jenkin
+
 sudo -i
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103563586-05654e00-4ee3-11eb-8df5-8d0a4d8919e9.JPG)
@@ -49,12 +54,19 @@ git clone https://github.com/logambigaik/Maven-webapp.git
 
 Tomcat install:
 =============
+
 yum install git maven java-1.8* -y  
+
 in /opt -(third party tools should be installed under /opt folder)
+
 wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.61/bin/apache-tomcat-8.5.61.tar.gz
+
 tar -xvzf apache-tomcat-8.5.60.tar.gz
+
 cd apache-tomcat-8.5.60
+
 cd bin
+
 sh startup.sh
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103564486-9983e500-4ee4-11eb-8cdd-1ede87e558cf.JPG)
@@ -70,6 +82,7 @@ Using ssh-keygen copying file from Jenkins to Tomcat:
 ====================================================
 
 in Jenkins server,
+
 ssh-keygen
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103566823-b6bab280-4ee8-11eb-920e-96b8f0e21d15.JPG)
@@ -77,6 +90,7 @@ ssh-keygen
 ![Capture](https://user-images.githubusercontent.com/54719289/103566990-fbdee480-4ee8-11eb-9cee-890a9e529474.JPG)
 
 id_rsa-private key
+
 id_rsa.pub -public key
 
 Copy the public key from jenkins and place it in tomcat -authorized_keys.
