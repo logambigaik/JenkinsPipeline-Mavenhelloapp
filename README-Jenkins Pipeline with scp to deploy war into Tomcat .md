@@ -14,33 +14,9 @@ Pipeline Syntax for script:
 ![Capture](https://user-images.githubusercontent.com/54719289/103571607-3482bc00-4ef1-11eb-9ff1-a1f10954fe69.JPG)
 
 Pipeline Code:
+=============
 
-{
-    agent any
-    stages{
-        stage('SCM'){
-            steps{
-                git branch: 'main', url: 'https://github.com/logambigaik/Maven-webapp.git'
-            }
-        }
-        stage('Build Artifact'){
-            steps{
-                sh 'mvn clean install'
-            }
-        }
-        
-        stage('Deploy to Tomcat'){
-            steps{
-                dir('target') {
-                    sh 'scp *.war root@172.31.30.146:/opt/apache-tomcat-8.5.61/webapps'
-                    }
-                }       
-                       
-        
-        }
-        
-    }
-}
+REFER :pipeline.txt
 
 
 ![Capture](https://user-images.githubusercontent.com/54719289/103572669-f38ba700-4ef2-11eb-817f-d90ff039a527.JPG)
