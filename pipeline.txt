@@ -24,3 +24,33 @@
         
     }
 }
+
+
+With subdirectory :
+=================
+
+pipeline{
+    agent any
+    stages
+    {
+        stage('SCM'){
+         steps{
+             git 'https://github.com/Naresh240/awsdemoproject.git'
+         }   
+        }
+        stage('Build Artifact'){
+            steps{
+                dir('mavewebappdemo'){
+                    sh 'mvn clean install'
+                }
+            }
+        }
+        stage('Deploytomcat'){
+            steps{
+                dir('mavewebappdemo') {
+                    sh 'scp target/*.war root@172.31.34.187'
+}
+            }
+        }
+    }
+}
