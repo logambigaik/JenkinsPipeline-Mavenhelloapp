@@ -56,17 +56,34 @@ pipeline{
 }
 
 
+Deploy with Publish over ssh:
+============================
 
+pipeline{
     agent any
     stages{
-        stage('Deploy with POS'){
+        stage('SCM'){
+            steps{
+                git branch: 'main', url: 'https://github.com/logambigaik/JenkinsPipeline-Mavenhelloapp.git'
+            }
+        }
+        stage('Build'){
+            steps{
+                sh 'mvn clean install'
+            }
+        }
+        stage('Deploy'){
             steps{
                 dir('target'){
-                shPublisher(publishers: [sshPublisherDesc(configName: 'tomcat', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/apache-tomcat-8.5.61/webapps', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '*.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'tomcat', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', 
+                remoteDirectory: '/apache-tomcat-8.5.61/webapps', 
+                remoteDirectorySDF: false, 
+                removePrefix: '', 
+                sourceFiles: '*.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+                
             
                 }    
             }
-        }
-            
+        }    
     }
-  }
+}
