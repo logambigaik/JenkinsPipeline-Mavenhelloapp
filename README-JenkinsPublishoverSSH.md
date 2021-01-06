@@ -70,11 +70,30 @@ Configure the Publish over the SSH plugin(Manage Jenkins->Configur system)
 ![Capture](https://user-images.githubusercontent.com/54719289/103696904-24d4a780-4fc5-11eb-9e13-621dee58455b.JPG)
 
 Note: tomcat root password is important(set password with :passwd root), enter tomcat ipaddress ,nit require to use ssh-keygen in tomcat and jenkins
+Also remote directory is mandatory to specify in configure system.
+
+![Capture](https://user-images.githubusercontent.com/54719289/103812075-f4077780-5083-11eb-8f18-4ce6c375e84d.JPG)
+
+
 
 Pipeline syntax section sshPublish:
 ==================================
 
-![Capture](https://user-images.githubusercontent.com/54719289/103697341-ce1b9d80-4fc5-11eb-9858-a5df297a3d4b.JPG)
+![Capture](https://user-images.githubusercontent.com/54719289/103811767-6e83c780-5083-11eb-963b-3841351b1bc0.JPG)
+
+
+
+![Capture](https://user-images.githubusercontent.com/54719289/103812208-2c0eba80-5084-11eb-9aa0-977fb33c18c7.JPG)
+
+
+Tomcat server:
+=============
+
+![Capture](https://user-images.githubusercontent.com/54719289/103812291-519bc400-5084-11eb-8e9d-57139a580e1a.JPG)
+
+
+
+![Capture](https://user-images.githubusercontent.com/54719289/103811767-6e83c780-5083-11eb-963b-3841351b1bc0.JPG)
 
 
 
